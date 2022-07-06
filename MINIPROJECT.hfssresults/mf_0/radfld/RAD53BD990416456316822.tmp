@@ -1,0 +1,12 @@
+$begin 'RFSM'
+	$begin 'RadSurfs'
+	$end 'RadSurfs'
+	$begin 'CustomSurfs'
+	$end 'CustomSurfs'
+	$begin 'SetupSolns'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=0, VersID=5, ParentID=83, VersID=456, Context='0:0', DesVarn='asub=\'33mm\' box=\'200mm\' bsub=\'16mm\' gap=\'1mm\' hs=\'1.6mm\' lg=\'7.5mm\' lstrip3=\'4mm\' lstrip4=\'7.1mm\' lstrip5=\'3mm\' lstrip6=\'8.5mm\' lstrip7=\'8.3mm\' lstrip8=\'8.6mm\' ltl=\'14.75mm\' off=\'1.5mm\' w=\'2mm\' wstrip=\'3mm\' wstrip1=\'2.5mm\' wtl=\'3mm\'', IntrVarn='Freq=\'4.8GHz\'')
+			SetupSolnFBOFile='73BE977616463867686.tmp'
+		$end 'SetupSolnEntry'
+	$end 'SetupSolns'
+$end 'RFSM'

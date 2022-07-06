@@ -1,0 +1,201 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002022, month=000000000003, day=000000000004, hour=000000000015, min=000000000016, sec=000000000019)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000005283, lin=000000000179, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock19'
+	SolutionName='AdaptivePass'
+	SolutionID=82
+	V=456
+	$begin 'States'
+		F(VID=84, Ver=456)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(4800000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=6
+			M(VID=84, Ver=456, File='DV84_SOL82_M6_V456.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'A'
+		$begin 'SubData'
+			ID=6
+			A(VID=84, Ver=456, File='DV84_SOL82_A6_V456.sd')
+		$end 'SubData'
+	$end 'A'
+$end 'SolutionBlock19'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=81, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock2'
+	'SolutionKey(SimSetup=81, Instance=\'SolutionDefinition\', Solution=82, VersionID=456)'='SolutionBlock19'
+	'SolutionKey(SimSetup=81, Instance=\'SolutionDefinition\', Solution=83, VersionID=456)'='SolutionBlock20'
+	'SolutionKey(SimSetup=81, Instance=\'SolutionDefinition\', Solution=85, VersionID=456)'='SolutionBlock21'
+	'SolutionKey(SimSetup=81, Instance=\'asub=\\\'33mm\\\' box=\\\'200mm\\\' bsub=\\\'16mm\\\' gap=\\\'1mm\\\' hs=\\\'1.6mm\\\' lg=\\\'7.5mm\\\' lstrip3=\\\'4mm\\\' lstrip4=\\\'7.1mm\\\' lstrip5=\\\'3mm\\\' lstrip6=\\\'8.5mm\\\' lstrip7=\\\'8.3mm\\\' lstrip8=\\\'8.6mm\\\' ltl=\\\'14.75mm\\\' off=\\\'1.5mm\\\' w=\\\'2mm\\\' wstrip=\\\'3mm\\\' wstrip1=\\\'2.5mm\\\' wtl=\\\'3mm\\\'\', Solution=-3, VersionID=0)'='SolutionBlock6'
+$end 'BlockMapName'
+$begin 'SolutionBlock2'
+	SimSetupID=81
+	SimSetupName='Setup1'
+	VersionID=0
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=84, Ver=0, Dir='DV84_S81_V0.cmesh/')
+	$end 'CurrMeshes'
+	$begin 'RadFieldSurfMeshes'
+		SM(VID=84, Ver=0, Dir='DV84_S81_V0.sfmesh/')
+	$end 'RadFieldSurfMeshes'
+	$begin 'WaveAdapt'
+		WA(VID=84, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=84, Ver=0, P=6)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=84, Ver=0, File='DV84_S81_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=84, Ver=0, Dir='DV84_S81_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock20'
+	SolutionName='LastAdaptive'
+	SolutionID=83
+	V=456
+	$begin 'States'
+		F(VID=84, Ver=456)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(4800000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=84, Ver=456, File='DV84_SOL83_M0_V456.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(450, 4800000000)
+		$begin 'DataMap'
+			VID=84
+			Ver=456
+			F(DblID=450, Dir='DV84_S83_V456_F450/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock20'
+$begin 'SolutionBlock6'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=false
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='0'
+	c(numtets=7142, passno=1)
+	c(numtets=9287, magdeltas=0.1050185262536255, passno=2)
+	c(numtets=12075, magdeltas=0.03440950639436313, passno=3)
+	c(numtets=15698, magdeltas=0.02525705933040204, passno=4)
+	c(numtets=20410, passno=5)
+	c(numtets=26538, passno=6)
+$end 'SolutionBlock6'
+$begin 'SolutionBlock21'
+	SolutionName='Sweep'
+	SolutionID=85
+	V=456
+	$begin 'States'
+		F(VID=84, Ver=456)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=true
+		SweepDefType='LIN'
+		StartFreq=1000000000
+		StopFreq=7000000000
+		StepSize=10000000
+		SolutionType=4
+		CenterFreq=4000000000
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=84, Ver=456, File='DV84_SOL85_M0_V456.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(454, 4000000000)
+		$begin 'DataMap'
+			VID=84
+			Ver=456
+			F(DblID=454, Dir='DV84_S85_V456_F454/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock21'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=80
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=488
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='asub=\'33mm\' box=\'200mm\' bsub=\'16mm\' gap=\'1mm\' hs=\'1.6mm\' lg=\'7.5mm\' lstrip3=\'4mm\' lstrip4=\'7.1mm\' lstrip5=\'3mm\' lstrip6=\'8.5mm\' lstrip7=\'8.3mm\' lstrip8=\'8.6mm\' ltl=\'14.75mm\' off=\'1.5mm\' w=\'2mm\' wstrip=\'3mm\' wstrip1=\'2.5mm\' wtl=\'3mm\'', ID=84)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=84, Ver=80, Dir='DV84_V80.imesh/')
+	$end 'InitialMeshes'
+	$begin 'LumpedPortDimensions'
+		DIMS(VID=84, Ver=80, D=7, D=0.0016, D=0.003)
+	$end 'LumpedPortDimensions'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=84, Ver=80, Dir='DV84_MI0_V80.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		SolutionBlock1(pos=4418, lin=153, lvl=0)
+		BlockMapName(pos=986, lin=32, lvl=0)
+		SolutionBlock6(pos=3234, lin=102, lvl=0)
+		SolutionBlock19(pos=370, lin=1, lvl=0)
+		SolutionBlock20(pos=2576, lin=69, lvl=0)
+		SolutionBlock21(pos=3700, lin=117, lvl=0)
+		SolutionBlock2(pos=1905, lin=40, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=5283, lin=179, lvl=0)
+	$end '$index$'
+$end '$index$'
